@@ -1,0 +1,211 @@
+:root {
+    --red: hsl(0, 100%, 47%);
+    --lightGrayishViolet: hsl(270, 3%, 87%);
+    --darkGrayishViolet: hsl(279, 6%, 55%);
+    --veryDarkViolet: hsl(278, 68%, 11%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    color: var(--veryDarkViolet);
+}
+
+/* Section Image */
+.section-image img {
+    width: 100%;
+}
+
+/* Div Overlay */
+.div-overlay {
+    left: 0;
+}
+
+/* Card Back */
+.card-back {
+    width: 285px;
+    top: 2rem;
+    right: 1rem;
+}
+
+.card-back small {
+    color: var(--lightGrayishViolet);
+    font-size: .65rem;
+    top: 4.25rem;
+    right: 2rem;
+}
+
+/* Card Front */
+.card-front {
+    width: 285px;
+    bottom: -2.25rem;
+    left: 1rem;
+}
+
+.card-front-text {
+    color: var(--lightGrayishViolet);
+    padding: 1.25rem;
+    letter-spacing: 2px;
+}
+
+#circle1 {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-bottom: 1.8rem;
+}
+
+#circle2 {
+    width: .8rem;
+    height: .8rem;
+    margin-bottom: 1.8rem;
+}
+
+.card-front small {
+    letter-spacing: 1px;
+    font-size: .65rem;
+    opacity: .9;
+}
+
+/* Section Form */
+.section-form {
+    padding-block: 5rem 3rem;
+}
+
+form, .div-thanks {
+    max-width: 500px;
+}
+
+label {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+
+input:focus {
+    outline: solid 1px var(--veryDarkViolet);
+}
+
+input.error {
+    outline: solid 1px var(--red);
+}
+
+input::placeholder {
+    opacity: .5;
+}
+
+small {
+    font-size: .85rem;
+}
+
+button {
+    background-color: var(--veryDarkViolet);
+    color: var(--lightGrayishViolet);
+    border-radius: 10px;
+}
+
+h1 {
+    letter-spacing: 2px;
+}
+
+/* Div Thanks */
+.div-thanks p {
+    color: var(--darkGrayishViolet);
+}
+
+@media screen and (min-width: 600px) {
+    .div-overlay {
+        max-width: 500px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .section-image img {
+        max-height: 400px;
+    }
+}
+
+@media screen and (min-width: 1071px) {
+    /* Section Image */
+    .section-image {
+        width: 35%;
+    }
+
+    .section-form {
+        width: 75%;
+    }
+
+    .div-overlay {
+        max-width: unset;
+        left: unset;
+        transform: unset;
+    }
+
+    .section-image img {
+        max-height: unset;
+        height: 100%;
+    }
+
+    main {
+        display: flex;
+    }
+
+    /* Card Back */
+    .card-back {
+        width: 400px;
+        top: 52%;
+        right: 0;
+        transform: translateX(50%);
+    }
+
+    .card-back small {
+        font-size: 1rem;
+        top: 6rem;
+        right: 3rem;
+    }
+
+    /* Card Front */
+    .card-front {
+        width: 400px;
+        bottom: 52%;
+        left: unset;
+        right: 0;
+        transform: translateX(25%);
+    }
+
+    .card-front-text {
+        padding: 1.5rem;
+        font-size: 1.75rem;
+    }
+
+    #circle1 {
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: 3.25rem;
+    }
+
+    #circle2 {
+        width: 1.35rem;
+        height: 1.35rem;
+        margin-bottom: 3.25rem;
+        margin-left: .35rem;
+    }
+
+    .card-front small {
+        font-size: 1rem;
+        opacity: unset;
+    }
+
+    /* Section Form */
+    form > * {
+        margin-left: 3rem;
+    }
+
+    .div-thanks > * {
+        margin-left: 3rem;
+    }
+}
